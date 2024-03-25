@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/* CSS Document */
+img {
+        width: 50%;
+        margin: auto;
+        display: block;
+		align-items: center;
+    }
+
+	video {
+        width: 50%;
+		display: block;
+		margin: 0 auto
+    }
+body {
+	margin: 0px;
+	background-image: url("images/stars.jpg");
+	background-size: 100vw;
+	color: lightgray;
+	font-family: 'Comfortaa', sans-serif;
+	
+}
+
+	a:link {
+  color: purple;
+  background-color: transparent;
+  text-decoration: none;
+	}
+	a:visited {
+	  color: darkgray;
+	  background-color: transparent;
+	  text-decoration: none;
+	}
+	a:hover {
+	  color: rebeccapurple;
+	  background-color: transparent;
+	  text-decoration: underline;
+	}
+	a:active {
+	  color: darkblue;
+	  background-color: transparent;
+	  text-decoration: underline;
+	}	
+
+#theGrid {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 25% auto 25%;
+    grid-template-rows: min-content 1fr min-content;
+}
+
+header {
+    
+	grid-row: 1;
+    grid-column: 1 / 4;
+    align-self: center;
+    text-align: center;
+	font-size: 36px;
+	font-family: 'Comfortaa', sans-serif;
+}
+
+nav {
+    
+	grid-row: 2;
+    grid-column: 1 / 2;
+	font-size: 22px;
+	font-family: 'Comfortaa', sans-serif;
+}
+
+main {
+    
+	grid-row: 2;
+    grid-column: 2 / 2;
+    display: grid;
+	font-size: 22px;
+	font-family: 'Comfortaa', sans-serif;
+
+}
+
+ #mainDiv {
+		text-align: center; 
+        width: 50%;
+		margin:auto;
+        border-style: solid;
+		border-radius: 5px;
+        border-width: 1px;
+		font-family: Arial, Helvetica, sans-serif;
+    }
+	
+	#otherDiv {
+		text-align: center; 
+        width: 50%;
+		margin:auto;
+        border-style: dotted;
+		border-radius: 5px;
+        border-width: 1px;
+		font-size: 22px;
+		font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .roundImages {
+            border-style: dashed;
+            border-width: 2px;
+            border-radius: 25px;
+    }
+
+#mobileNav {
+			display: none;
+		}
+	
+    .mobileNavBar {
+        position: relative;
+        border: 1px solid;
+		border-radius: 4px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #siteName {
+        align-self: center;
+        font-size: 1rem;
+		font-size: 22px;
+		font-family: 'Comfortaa', sans-serif;
+    }
+
+    #hamburgerDiv {
+        /*background-color: aqua;
+        height: 75%;
+        font-size: 32px;
+        border: 1px solid;*/
+        align-self: center;                
+    }
+
+    #hamburgerBtn {
+        background-color: darkgray;
+        font-size: 32px;
+        border: 1px solid;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    #theLinks {
+        display: none;
+        text-align: center;
+		font-size: 22px;
+		font-family: 'Comfortaa', sans-serif;
+    }
+
+    #theLinks a {
+        display: block;
+        text-decoration: none;
+    }
+
+	
+@media only screen and (max-width: 768px) {
+		#mobileNav {
+			display: block;}
+		img {width: 90vw;}
+		video {width: 90vw;}
+		main {grid-column: 1;
+			margin-left: 15px;}
+		nav {display: none;}
+		header {display: none;}
+	}

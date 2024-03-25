@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+
+<html>
+<style>
+	
+</style>
+    <head>
+        <title>My Homepage</title>
+		<!--Link to external CSS -->
+		<link href="css/MasterCSS.css" rel="stylesheet" type="text/css">
+		
+		<!-- Meta tag to make this a responsive web page -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	
+    <body>
+		<div id="mobileNav">
+			<div class="mobileNavBar">
+				<div id="siteName">
+					Aron's Site
+				</div>
+            <div id="hamburgerDiv">
+                  <!--<a href="#" onclick="myDropdownFunction()">&#9776;</a>-->
+                  <button id="hamburgerBtn" onclick="myDropdownFunction()">&#9776;</button>
+            </div>
+          </div>
+          <div id="theLinks">
+              <a href="../Week 1/week1.html">My Homepage</a>
+			  <br>
+			  <a href="../Week 5/Web_Poem.html">Web Poem</a>
+          </div>
+		<br>
+		<br>
+		</div>
+		
+		<!--Intro-->
+        	<div id="mainDiv">	
+				
+        		This is the hub for everything I'll be making and posting. 
+				<br>
+				<br>
+			</div>
+			
+			<div id="otherDiv">	
+					<a href="../Week 1/week1.html">My Homepage</a>
+					<br>
+					<a href="../Week 5/Web_Poem.html">Web Poem</a>
+			</div>
+		
+    </body>
+</html>
+
+<script>
+    function myDropdownFunction() {
+      var linksDiv = document.getElementById("theLinks");
+      if (linksDiv.style.display === "block") {
+        linksDiv.style.display = "none";
+      }
+		else {
+        linksDiv.style.display = "block";
+      }
+    }
+</script>
