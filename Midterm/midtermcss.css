@@ -126,7 +126,10 @@ searchbox{
 	
 }
 
-
+fullstatholder{
+	
+	display: inline-block;
+}
 
 Nameholder{
 	width: fit-content;
@@ -172,6 +175,15 @@ createbody{
 	font-size: 36px;
 	width: fit-content;
 	
+}
+
+countholder{
+	
+	display: inline-block;
+}
+
+holder{
+	display: inline-block;
 }
 
 #create {
@@ -382,6 +394,16 @@ topicsbar{
 	
 }
 
+.bounce {
+  animation: bounce 0.21s ease;
+}
+
+@keyframes bounce {
+    0% { transform:translateY(0%); }
+    50% { transform:translateY(-30%); }
+    100% { transform:translateY(0%); }
+}
+
 @media only screen and (max-width: 2000px) {
 	main{width: 90%}
 }
@@ -413,3 +435,52 @@ topicsbar{
             border-radius: 10px;
 			width: 90%;
     }
+#up0{
+	display: inline-block;
+}
+#up1{
+	display: inline-block;
+}
+#up2{
+	display: inline-block;
+}
+#up3{
+	display: inline-block;
+}
+
+#down0{
+	display: inline-block;
+}
+#down1{
+	display: inline-block;
+}
+#down2{
+	display: inline-block;
+}
+#down3{
+	display: inline-block;
+}
+#re0{
+	display: inline-block;
+}
+#re1{
+	display: inline-block;
+}
+#re2{
+	display: inline-block;
+}
+#re3{
+	display: inline-block;
+}
+#book0{
+	display: inline-block;
+}
+#book1{
+	display: inline-block;
+}
+#book2{
+	display: inline-block;
+}
+#book3{
+	display: inline-block;
+}

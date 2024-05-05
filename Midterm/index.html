@@ -7,13 +7,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Comforta" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/6458156576.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/scripthub.js"></script>
+	
   </head>
 
   <body>  
 	  
       <div id="theGrid">      
         <header>
-			<i class="fa-solid fa-face-grin-wide"></i> Murmur
+			<i class="fa-solid fa-face-grin-wide" on></i> Murmur
 		  <br>
 		</header>
 		<br>
@@ -56,7 +58,7 @@
 			  	<i class="fa-solid fa-magnifying-glass"></i>Search
 			  </searchbox>
 		  </search> 
-        <main>
+        <main onload="setnum()">
 			<div id="create">
 				<createbody>
 					<br>
@@ -87,14 +89,14 @@
 					<br>
 					<br>
 					<i class="fa-solid fa-comment"></i> 129 
-					<i class="fa-solid fa-arrow-right-arrow-left"></i> 583 
-					<i class="fa-solid fa-angle-up"></i> 11k 
-					<i class="fa-solid fa-angle-down"></i> 112 
-					<i class="fa-solid fa-bookmark"></i> 127
+					<i class="fa-solid fa-arrow-right-arrow-left" onclick="repostpress(this, 0)"></i><holder id="re0">583</holder>
+					<i class="fa-solid fa-angle-up" onclick="upvotepress(this, 0)"></i><holder id="up0">110</holder>
+					<i class="fa-solid fa-angle-down" onclick="downvotepress(this, 0)"></i> <holder id="down0">11</holder> 
+					<i class="fa-solid fa-bookmark" onclick="bookmarkpress(this, 0)"></i> <holder id="book0">127</holder>
 				</textbody>
 			</div>	
 			
-			<div id="messageContainer2" onclick="location.href='message1.html';">&nbsp;
+			<div id="messageContainer2">
 				<iconholder>
 					<br>
 					<i class="fa-solid fa-circle-user fa-2xl"></i>
@@ -107,14 +109,14 @@
 				<textbody>
 					Lil dude!
 					<br>
-					<img class="roundImages" src="images/jinx.jpg"
+					<img class="roundImages" src="images/jinx.jpg" onclick="location.href='message1.html';">&nbsp;
 					<br>
 					<br>
 					<i class="fa-solid fa-comment"></i> 349
-					<i class="fa-solid fa-arrow-right-arrow-left"></i> 7k
-					<i class="fa-solid fa-angle-up"></i> 190k 
-					<i class="fa-solid fa-angle-down"></i> 0
-					<i class="fa-solid fa-bookmark"></i> 12k
+					<i class="fa-solid fa-arrow-right-arrow-left" onclick="repostpress(this, 1)"></i> <holder id="re1">721</holder>
+					<i class="fa-solid fa-angle-up" onclick="upvotepress(this, 1)"></i><holder id="up1">195</holder>
+					<i class="fa-solid fa-angle-down" onclick="downvotepress(this, 1)"></i> <holder id="down1">0</holder> 
+					<i class="fa-solid fa-bookmark" onclick="bookmarkpress(this, 1)"></i> <holder id="book1">1200</holder> 
 				</textbody>
 				</div>
 			
@@ -139,14 +141,15 @@
 					<br>
 					<br>
 					<i class="fa-solid fa-comment"></i> 777
-					<i class="fa-solid fa-arrow-right-arrow-left"></i> 1.7k
-					<i class="fa-solid fa-angle-up"></i> 77k 
-					<i class="fa-solid fa-angle-down"></i> 2k
-					<i class="fa-solid fa-bookmark"></i> 7k
+					<i class="fa-solid fa-arrow-right-arrow-left" onclick="repostpress(this, 2)"></i> <holder id="re2">170</holder>
+					<i class="fa-solid fa-angle-up" onclick="upvotepress(this, 2)"></i><holder id="up2">772</holder>
+					<i class="fa-solid fa-angle-down" onclick="downvotepress(this, 2)"></i> <holder id="down2">23</holder> 
+					<i class="fa-solid fa-bookmark" onclick="bookmarkpress(this, 2)"></i> <holder id="book2">78</holder>
 				</textbody>
 				</div>
 			</main>
       </div>
-	  
   </body>
+	
+	
 </html>
