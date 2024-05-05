@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+<head>
+	<title>Home</title>
+    <link href="midtermcss.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Comforta" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/6458156576.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div id="theGrid">      
+        <header>
+			<i class="fa-solid fa-face-grin-wide"></i> Murmur
+		  <br>
+		</header>
+		<br>
+  		<nav>
+			<br>
+			<br>
+			<a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+			<br>
+			<br>
+			<a href="explore.html"><i class="fa-solid fa-magnifying-glass"></i> Explore</a>
+			<br>
+			<br>
+			<i class="fa-solid fa-bell"></i> Notifications
+			<br>
+			<br>
+			<i class="fa-regular fa-envelope"></i> Messages
+			<br>
+			<br>
+			<i class="fa-solid fa-user"></i> User
+			<br>
+			<br>
+			<i class="fa-solid fa-gear"></i> Settings
+			<br>
+			<br>
+			<i class="fa-solid fa-bookmark"></i> Bookmarks
+		</nav>
+		  
+		<navalt>
+			<a href="index.html"><i class="fa-solid fa-house"></i></a> &nbsp; &nbsp;
+			<a href="explore.html"><i class="fa-solid fa-magnifying-glass fa-xl"></i></a> &nbsp; &nbsp;
+			<i class="fa-solid fa-bell fa-xl"></i> &nbsp; &nbsp;	
+			<i class="fa-regular fa-envelope fa-xl"></i> &nbsp; &nbsp;		
+			<i class="fa-solid fa-user fa-xl"></i> &nbsp; &nbsp;			
+			<i class="fa-solid fa-gear fa-xl"></i> &nbsp; &nbsp;			
+			<i class="fa-solid fa-bookmark fa-xl"></i> &nbsp; &nbsp;
+		</navalt>  
+		  
+		  <search>
+			  <br>
+			  <searchbox>
+			  	<i class="fa-solid fa-magnifying-glass"></i>Search
+			  </searchbox>
+		  </search> 
+		
+        <main>
+			<div id="largerMessage">
+				<iconholder>
+					<br>
+					<i class="fa-solid fa-circle-user fa-2xl"></i>
+				</iconholder>
+				
+				<nameholder>
+					@DailyCats
+				</nameholder>
+				<br>
+				<textbody>
+					Lil dude!
+					<br>
+					<img class="largerImages" src="images/jinx.jpg"
+					<br>
+					<br>
+					<i class="fa-solid fa-comment"></i> 349
+					<i class="fa-solid fa-arrow-right-arrow-left" onclick="repostpress(this,0)"></i> <holder id="re0">721</holder>
+					<i class="fa-solid fa-angle-up" onclick="upvotepress(this, 0)"></i><holder id="up0">195</holder>
+					<i class="fa-solid fa-angle-down" onclick="downvotepress(this, 0)"></i> <holder id="down0">0</holder> 
+					<i class="fa-solid fa-bookmark" onclick="bookmarkpress(this, 0)"></i> <holder id="book0">1200</holder> 
+					</textbody>
+			</div>
+			
+			<div id="comment1">
+				
+				<iconholder>
+					<br>
+					<i class="fa-solid fa-circle-user fa-2xl"></i>
+				</iconholder>
+				
+				<nameholder>
+					@Dinglebop
+				</nameholder>
+				
+				<textbody>
+					So handsome!
+					<br>
+					<br>
+					<i class="fa-solid fa-arrow-right-arrow-left" onclick="repostpress(this,1)"></i> <holder id="re1">51</holder>
+					<i class="fa-solid fa-angle-up" onclick="upvotepress(this, 1)"></i><holder id="up1">913</holder>
+					<i class="fa-solid fa-angle-down" onclick="downvotepress(this, 1)"></i> <holder id="down1">12</holder> 
+					<i class="fa-solid fa-bookmark" onclick="bookmarkpress(this, 1)"></i> <holder id="book1">7</holder> 
+				</textbody>
+			</div>	
+			
+			<div id="comment2">
+				<iconholder>
+					<br>
+					<i class="fa-solid fa-circle-user fa-2xl"></i>
+				</iconholder>
+				
+				<nameholder>
+					@serioustoughman
+				</nameholder>
+				
+				<textbody>
+					I'm a tough dude, but that's a cute cat.
+					<br>
+					<br>
+					<i class="fa-solid fa-comment"></i> 3
+					<i class="fa-solid fa-arrow-right-arrow-left" onclick="repostpress(this,2)"></i> <holder id="re2">23</holder>
+					<i class="fa-solid fa-angle-up" onclick="upvotepress(this, 2)"></i><holder id="up2">102</holder>
+					<i class="fa-solid fa-angle-down" onclick="downvotepress(this, 2)"></i> <holder id="down2">2</holder> 
+					<i class="fa-solid fa-bookmark" onclick="bookmarkpress(this, 2)"></i> <holder id="book2">2</holder> 
+				</textbody>
+				</div>
+			
+			<div id="comment3">
+				<iconholder>
+					<br>
+					<i class="fa-solid fa-circle-user fa-2xl"></i>
+				</iconholder>
+				
+				<nameholder>
+					@NewsPerson
+				</nameholder>
+				
+				<textbody>
+					Would you like your cat to be on the news?
+					<br>
+					<br>
+					<i class="fa-solid fa-comment"></i> 2
+					<i class="fa-solid fa-arrow-right-arrow-left" onclick="repostpress(this,3)"></i> <holder id="re3">12</holder>
+					<i class="fa-solid fa-angle-up" onclick="upvotepress(this, 3)"></i><holder id="up3">9</holder>
+					<i class="fa-solid fa-angle-down" onclick="downvotepress(this, 3)"></i> <holder id="down3">0</holder> 
+					<i class="fa-solid fa-bookmark" onclick="bookmarkpress(this, 3)"></i> <holder id="book3">1</holder> 
+				</textbody>
+				</div>   
+			
+			
+		</main>
+			
+	
+	
+</body>
+</html>
+
+<script>
+let upcount = [195, 913, 102, 9];
+let downcount = [0, 12, 2, 1];
+let recount = [721, 51, 23, 12];
+let bookcount = [1200, 7, 2, 1];
+
+function upvotepress(element, num)
+	{	
+		if (element.style.color == 'orange'){
+			element.classList.remove('bounce');
+			element.style.color = 'lightgray'
+			upcount[num] -= 1;
+			let upvar = "up" + num;
+			document.getElementById(upvar).innerHTML = String(upcount[num]);
+		}
+		else if (element.style.color != 'orange'){
+			element.classList.add('bounce');
+			element.style.color = 'orange'
+			upcount[num] +=1;
+			let upvar = "up" + num;
+			document.getElementById(upvar).innerHTML = String(upcount[num]);
+		}
+		
+	}
+function downvotepress(element, num)
+	{
+		if (element.style.color == 'slateblue'){
+			element.classList.remove('bounce');
+			element.style.color = 'lightgray'
+			downcount[num] -= 1;
+			let downvar = "down" + num;
+			document.getElementById(downvar).innerHTML = String(downcount[num]);
+		}
+		else if (element.style.color != 'slateblue'){
+			element.classList.add('bounce');
+			element.style.color = 'slateblue'
+			downcount[num] += 1;
+			let downvar = "down" + num;
+			document.getElementById(downvar).innerHTML = String(downcount[num]);
+		}
+	}
+
+function repostpress(element, num)
+	{
+		if (element.style.color == 'lightgreen'){
+			element.classList.remove('bounce');
+			element.style.color = 'lightgray'
+			recount[num] -= 1;
+			let revar = "re" + num;
+			document.getElementById(revar).innerHTML = String(recount[num]);
+		}
+		else if (element.style.color != 'lightgreen'){
+			element.classList.add('bounce');
+			element.style.color = 'lightgreen'
+			recount[num] += 1;
+			let revar = "re" + num;
+			document.getElementById(revar).innerHTML = String(recount[num]);
+		}
+	}
+
+function bookmarkpress(element, num)
+	{
+		if (element.style.color == 'lightblue'){
+			element.classList.remove('bounce');
+			element.style.color = 'lightgray'
+			bookcount[num] -= 1;
+			let bookvar = "book" + num;
+			document.getElementById(bookvar).innerHTML = String(bookcount[num]);
+		}
+		else if (element.style.color != 'lightblue'){
+			element.classList.add('bounce');
+			element.style.color = 'lightblue'
+			bookcount[num] += 1;
+			let bookvar = "book" + num;
+			document.getElementById(bookvar).innerHTML = String(bookcount[num]);
+		}
+	}
+
+	
+	
+</script>
